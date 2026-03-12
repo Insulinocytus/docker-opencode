@@ -8,6 +8,7 @@ apt-get install -y --no-install-recommends bash ca-certificates curl git nodejs 
 rm -rf /var/lib/apt/lists/*
 
 curl -fsSL https://opencode.ai/install | bash
+install -m 0755 "$HOME/.opencode/bin/opencode" /usr/local/bin/opencode
 
 npm install -g agent-browser
 agent-browser install --with-deps
